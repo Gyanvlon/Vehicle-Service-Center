@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mms
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+#  thymeleaf:
+#    enabled: true  # Ensures Thymeleaf is enabled
+#    prefix: classpath:/templates/  # Path to Thymeleaf templates
+#    suffix: .html  # Thymeleaf file suffix
+#    cache: false  # Disable caching for development
